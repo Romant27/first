@@ -100,7 +100,4 @@ test ('fill table', async({page})=>{
   await expect(page.locator('tbody')).toContainText(testData.email)
 })
 
-test ('tr1', async({page})=>{
- await page.getByRole("button",{name:"Light"}).click()
- await page.getByText('Dark').click()
-})
+
