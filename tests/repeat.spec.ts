@@ -99,7 +99,7 @@ test ('fill table', async({page})=>{
 
   await expect(page.locator('tbody')).toContainText(testData.email)
 })
-test ('tr111', async({page})=>{
+test ('tr', async({page})=>{
  await page.getByRole("button",{name:"Light"}).click()
  await page.getByText('Dark').click()
 })
